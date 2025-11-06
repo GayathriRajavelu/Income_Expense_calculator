@@ -14,10 +14,6 @@ A simple web application to track personal income and expenses.
 - CSS
 - JavaScript
 
-## Installation
-1. Clone the repository
-2. Open `index.html` in your browser
-
 ## Usage
 1. Enter income/expense amount and description
 2. Click Add button to record transaction 
