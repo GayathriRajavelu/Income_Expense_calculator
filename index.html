@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Income & Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+ <link rel="shortcut icon" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fimage-vector%2Fcalculator-isolated-line-icon-accounting-finance-1575497785&psig=AOvVaw2aFRB-G0Ytrmm3a8IxSuTH&ust=1762507171224000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjbxvmf3ZADFQAAAAAdAAAAABAL"/>
+</head>
+<body>
+  <div class="container">
+    <h1> Income & Expense Tracker</h1>
+
+    <!-- Summary Section -->
+    <div class="summary">
+      <div class="card">
+        <h3>Total Income</h3>
+        <p id="total-income">$0</p>
+      </div>
+      <div class="card">
+        <h3>Total Expenses</h3>
+        <p id="total-expense">$0</p>
+      </div>
+      <div class="card">
+        <h3>Net Balance</h3>
+        <p id="net-balance">$0</p>
+      </div>
+    </div>
+
+    <!-- Input Form -->
+    <form id="transaction-form">
+      <input type="text" id="description" placeholder="Enter description" required />
+      <input type="number" id="amount" placeholder="Enter amount" required />
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <div class="buttons">
+        <button type="submit">Add</button>
+        <button type="button" id="reset-btn">Reset</button>
+      </div>
+    </form>
+
+    <!-- Filter Section -->
+    <div class="filters">
+      <label><input type="radio" name="filter" value="all" checked /> All</label>
+      <label><input type="radio" name="filter" value="income" /> Income</label>
+      <label><input type="radio" name="filter" value="expense" /> Expense</label>
+    </div>
+
+    <!-- Transaction List -->
+    <ul id="transaction-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
